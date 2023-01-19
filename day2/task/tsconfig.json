@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "strict": false,
+    "noImplicitAny": false,
+    "jsx": "preserve",
+    "sourceMap": true,
+    "allowJs": true,
+    "checkJs": false,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "lib": ["esnext", "dom"],
+    "types": ["vite/client"],
+    "baseUrl": ".",
+    "paths": {
+      "canisters/dao": ["src/declarations/dao"],
+      "canisters/website": ["src/declarations/website"],
+      "@/*": ["src/ui/*"],
+      "~/*": ["src/ui/*"]
+    },
+    "importsNotUsedAsValues": "error",
+    "isolatedModules": true
+  },
+  "include": [
+    "src/ui/**/*.ts",
+    "src/ui/**/*.d.ts",
+    "src/ui/**/*.tsx",
+    "src/ui/**/*.vue"
+  ]
+}
