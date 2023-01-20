@@ -8,7 +8,7 @@ import Array "mo:base/Array";
 module {
   type Book = Book.Book; // can be removed
   type List<T> = List.List<T>;
-
+  
   // 1. Write a function `unique` that takes a list l of type List<T> and
   //    returns a new list with all duplicate elements removed.
   //
@@ -51,5 +51,5 @@ module {
   // 3. Write a function `is_anonymous` that takes no arguments but returns a Boolean indicating if the caller is anonymous or not.
   //
   //     is_anynomous : () -> async Bool; 
-  
+
 };

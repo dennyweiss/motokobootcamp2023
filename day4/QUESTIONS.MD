@@ -6,7 +6,7 @@
 
 2. How much accounts can a unique Principal own?
 
-    A principle can own a maximum of **4,294,967,295 acounts**.
+    A principle can own a maximum of **4,294,967,295 accounts**.
 
 3. Can we safely upgrade a canister from interface A to interface B?
 
@@ -30,4 +30,4 @@
     }
     ```
 
-    **Yes**, because Interface B supports the same types as Interface A and only differ that a has an additional parameter that get silently ignored when provided in call of Interface B' `greet` function.
+    **Yes**, it won't crash or trap. The second parameter will silently be ignored when provided in call of Interface B's `greet` function. **But the result of Interface B' `greet` will have a different meaning** when being called with Interface A in mind because surename and firstname aren't the same thing.
