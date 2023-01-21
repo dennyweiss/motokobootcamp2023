@@ -14,4 +14,8 @@
 
 3. Is possible to realize an intercanister call in query mode?
 
-    **False**, 
+    **True**, but only with the following conditions:
+
+    - call target canister method is in query mode
+    - source canister method is in non query mode
+    - target canister method does not change state
