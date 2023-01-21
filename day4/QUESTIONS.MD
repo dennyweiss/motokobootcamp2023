@@ -2,7 +2,7 @@
 
 1. Is the heap memory saved when upgrading a canister? How much heap memory does a canister has?
 
-    **No**, a canister has a **heap of 4GiB**.
+    **No**, a canister has a **heap of 4GiB** and 48GiB stable memory. 
 
 2. How much accounts can a unique Principal own?
 
