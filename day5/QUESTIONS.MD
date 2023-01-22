@@ -6,15 +6,21 @@
 
 2. **A.call() -> B.call() -> C** How much time (or rounds of consensus) do we need to wait for an answer?
 
-    A.call() -> 2 rounds
-    B.call() -> 2 rounds
-    C -> 2 rounds
+    ```text
+    A.call() 
+      -> 1 round for consensus -> 2s
+    B.call() 
+      -> 1 round for consensus -> 2s
+    C
+    ```
 
-    -> 6 rounds 12s.
+    => **2s, 2 rounds**
+
+    source -> https://forum.dfinity.org/t/inter-canister-query-calls-community-consideration/6754
 
 3. Is possible to realize an intercanister call in query mode?
 
-    **True**, but only with the following conditions:
+    **False**, the documentation mentioned this. On a local replica it's possible under the following but only with the following conditions:
 
     - call target canister method is in query mode
     - source canister method is in non query mode
